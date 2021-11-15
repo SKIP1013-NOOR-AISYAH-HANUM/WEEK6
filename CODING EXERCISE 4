@@ -1,0 +1,52 @@
+package Exercise;
+
+import java.util.Scanner;
+
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		int subject1;
+		int subject2;
+		String subj1;
+		String subj2;
+		
+		
+		System.out.println("Enter your first subject :");
+		subj1 = input.nextLine();
+		
+		System.out.println("Enter marks for first subject :");
+		subject1 = input.nextInt();
+		
+		System.out.println("Enter your second subject :");
+		subj2 = input.next();
+		
+		System.out.println("Enter marks for second subject :");
+		subject2 = input.nextInt();
+		
+		
+		double avg = (subject1+subject2)/2;
+		
+		if ( subject1 > subject2)
+		{	
+			System.out.println("Subject"+subj1 +subject1);
+		}	
+		else
+		{	
+			System.out.println("Subject"+subj2+subject2);
+		}	
+		if ((subject1 > 50) && (subject2 > 50))
+		{	
+				System.out.println("PASS");
+		}		
+		else
+		{	
+			System.out.println("FAILED");
+		}	
+				
+	}
+
+}
