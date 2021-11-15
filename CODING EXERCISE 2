@@ -1,0 +1,60 @@
+package Exercise;
+
+import java.util.Scanner;
+
+//MASUKKAN BMI. KECIL 25 NORMAL. KECIL 3O OVER WEIGHT. LAIN2 OBESE
+//Masukkan bmi.. jika kurang dari 18.5 - underweight, jika kurang dari 25 - normal, jika kurang dari 30 - overweight dan lain-lain Obese
+public class exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		double weight;
+		double height;
+		double bmi;
+		int age;
+		String name;
+		
+		System.out.print("Please enter your name: ");
+		name = input.next();
+		System.out.print("Please enter your age: ");
+		age = input.nextInt();
+		
+		System.out.print("Please enter your weight in Kilogram: ");
+		weight = input.nextDouble();
+		System.out.print("Please enter your height in Meter: ");
+		height = input.nextDouble();
+		
+		bmi = weight/(height*height);
+		
+		System.out.println("\nName : "+name);
+		System.out.println("Age : "+age);
+		System.out.println("Weight in kg :" +weight);
+		System.out.println("Height in meter : " +height);
+		System.out.printf("\nBody Mass Index of "+name+",age "+age+" is  "+bmi);
+		
+		
+		
+		if (bmi < 18.5)
+		{
+			System.out.print("Underweight "+bmi);
+		}
+		else if ((bmi >=18.5) && (bmi<24.9))
+		{
+			System.out.print("NORMAL ");
+		
+		}
+		else if( bmi < 30 )
+		{
+			System.out.print("Overweight");
+			
+		}
+		else 
+		{
+			System.out.print("Obese ");
+		}
+	}
+
+}
