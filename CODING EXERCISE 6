@@ -1,0 +1,38 @@
+package Exercise;
+
+import java.util.Scanner;
+
+public class Exercise6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Use scanner input, Enter integer number. Jika  number sama dengan input number, print number tersebut
+		Scanner input = new Scanner (System.in);
+		
+		int num;
+		
+		System.out.println("Enter your number: ");
+		num = input.nextInt();
+		
+		if(num==10)
+		{
+			System.out.println("Number is 10");
+		}
+		else if(num==20)
+		{
+			System.out.println("Number is 20");
+		}
+		else if(num==30)
+		{
+			System.out.println("Number is 10");
+		}
+		else
+		{
+			System.out.println("Invalid number");
+		}
+		
+	
+	}
+
+}
